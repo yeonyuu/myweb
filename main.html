@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+          #productArea{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+
+    .product{
+        width: 250px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .product img{
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+    }
+    </style>
+</head>
+<body>
+    <h2>몬치치 상품</h2>
+
+    <button onclick="showProducts('BEST')">BEST</button>
+    <button onclick="showProducts('NEW')">NEW</button>
+    <button onclick="showProducts('SALE')">SALE</button>
+
+    <hr>
+    <div id="productArea"></div>
+
+    <script>
+        let products=[];
+        
+        function showProducts(category){
+            const productArea = document.getElementById("productArea");
+
+            productArea.innerHTML="";
+            
+            for(let i=0; i<products.length;i++){
+                const product = products[i];
+                
+                //
+                if(product.category === category){
+                    const productDiv = document.createElement("div");
+                    productDiv.className="product";
+
+                    productDiv.innerHTML=`
+                        <img src = "${product.image}">
+                        <h3> ${product.name}</h3>
+                        <p> ${product.price}원</p>`;
+                        productArea.appendChild(productDiv);
+                }
+               
+            }
+        }
+
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("GET","products.json");
+        
+        xhttp.onload = function(){
+            const data = JSON.parse(xhttp.responseText);
+            products = data.products; // 상품 넣기
+            console.log(products[0].name);
+            showProducts("BEST");
+        };
+        xhttp.send();
+    </script>
+   
+</body>
+</html>
