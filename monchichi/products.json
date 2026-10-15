@@ -1,0 +1,78 @@
+{
+    "products": [
+        {
+            "no": 1,
+            "category": "BEST",
+            "name": "가챠 몬치치 어깨쿵 Fig 피규어 / 4종 세트",
+            "price": 5000,
+            "image": "img/monchichi1.png",
+            "description": "데일리로 입기 좋은 기본 티셔츠"
+        },
+        {
+            "no": 2,
+            "category": "BEST",
+            "name": "가챠 몬치치 마스코트 키체인 2탄 키홀더 재판",
+            "price": 29900,
+            "image": "img/monchichi2.png",
+            "description": "가볍게 들기 좋은 숄더백"
+        },
+        {
+            "no": 3,
+            "category": "BEST",
+            "name": "가챠 몬치치 마스코트 키체인 3탄 키홀더 (재판)",
+            "price": 39900,
+            "image": "img/monchichi3.png",
+            "description": "어디에나 잘 어울리는 스니커즈"
+        },
+
+        {
+            "no": 4,
+            "category": "NEW",
+            "name": "가챠 몬치치 페이스 누이(인형) 태닝 버전 키홀더",
+            "price": 49900,
+            "image": "img/monchichi4.png",
+            "description": "새롭게 입고된 후드집업"
+        },
+        {
+            "no": 5,
+            "category": "NEW",
+            "name": "미니 크로스백",
+            "price": 35000,
+            "image": "img/monchichi5.png",
+            "description": "가볍고 작은 크로스백"
+        },
+        {
+            "no": 6,
+            "category": "NEW",
+            "name": "[10월 발매] 가챠 몬치치 미니미니 레트로 물통 컬렉션",
+            "price": 59000,
+            "image": "img/monchichi6.png",
+            "description": "편안하게 신을 수 있는 운동화"
+        },
+
+        {
+            "no": 7,
+            "category": "SALE",
+            "name": "세일 맨투맨",
+            "price": 15000,
+            "image": "img/sale1.jpg",
+            "description": "할인 중인 기본 맨투맨"
+        },
+        {
+            "no": 8,
+            "category": "SALE",
+            "name": "세일 에코백",
+            "price": 9900,
+            "image": "img/sale2.jpg",
+            "description": "가볍게 들기 좋은 에코백"
+        },
+        {
+            "no": 9,
+            "category": "SALE",
+            "name": "세일 운동화",
+            "price": 25000,
+            "image": "img/sale3.jpg",
+            "description": "할인 중인 데일리 운동화"
+        }
+    ]
+}
